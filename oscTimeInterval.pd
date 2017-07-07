@@ -1,0 +1,21 @@
+#N canvas 465 50 617 602 10;
+#X obj -50 359 outlet;
+#X obj -51 22 inlet message;
+#X obj 53 20 inlet interval;
+#X obj -48 217 spigot;
+#X msg -6 195 1;
+#X obj 1 115 bng 15 250 50 0 /triggerObject empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -7 174 loadbang;
+#X msg 37 194 0;
+#X obj 2 142 del 20;
+#X connect 1 0 3 0;
+#X connect 2 0 8 1;
+#X connect 3 0 0 0;
+#X connect 3 0 5 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 1;
+#X connect 5 0 8 0;
+#X connect 6 0 4 0;
+#X connect 7 0 3 1;
+#X connect 8 0 4 0;
